@@ -19,7 +19,8 @@ const (
 	// MinSize is the default minimal size of a chunk.
 	MinSize = 512 * kiB
 	// MaxSize is the default maximal size of a chunk.
-	MaxSize = 8 * miB
+        // Customized to fit into a Base64 encoded Lambda invocation
+	MaxSize = 4718583
 
 	splitmask = (1 << averageBits) - 1
 
